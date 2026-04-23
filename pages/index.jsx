@@ -184,27 +184,7 @@ const Logo = ({ size = "md", dark = false }) => {
   const h = heights[size];
   return (
     <div className="flex items-center" style={{ height: h }}>
-      <div
-        style={{
-          background: BRAND.gradient, height: h, paddingLeft: h * 0.35, paddingRight: h * 0.35,
-          display: "flex", alignItems: "center", borderRadius: 4,
-          boxShadow: dark ? "none" : "0 2px 8px rgba(15,59,76,0.15)",
-        }}
-      >
-        <span style={{ color: "white", fontWeight: 900, fontSize: h * 0.5, letterSpacing: "0.02em" }}>
-          DOC
-        </span>
-      </div>
-      <div
-        style={{
-          height: h, width: h, border: `2px solid ${BRAND.navy}`, marginLeft: 4, borderRadius: 4,
-          display: "flex", alignItems: "center", justifyContent: "center", background: "white",
-        }}
-      >
-        <span style={{ color: BRAND.navy, fontStyle: "italic", fontSize: h * 0.5, fontFamily: "Georgia, serif", fontWeight: 400 }}>
-          in
-        </span>
-      </div>
+      <img src="/logo_doc_in.png" alt="DOC In" style={{ height: h, width: "auto", filter: dark ? "brightness(0) invert(1)" : "none" }} />
     </div>
   );
 };
