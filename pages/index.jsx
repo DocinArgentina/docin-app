@@ -180,11 +180,16 @@ const getHoraBucket = (hora) => { const h = parseInt(hora.split(":")[0]); return
 // COMPONENTS
 // ────────────────────────────────────────────────────────────────────────────
 const Logo = ({ size = "md", dark = false }) => {
-  const heights = { sm: 28, md: 36, lg: 48 };
-  const h = heights[size];
   return (
-    <div className="flex items-center" style={{ height: h }}>
-   <img src="/logo_doc_in2.png" alt="DOC In" style={{ height: h * 4, width: "auto", maxHeight: 160, marginTop: h * -1.4, marginBottom: h * -1.4, marginLeft: -8, filter: dark ? "brightness(0) invert(1)" : "none" }} />    </div>
+    <img 
+      src="/logo_doc_in2.png" 
+      alt="DOC In" 
+      style={{ 
+        height: 40, 
+        width: "auto",
+        filter: dark ? "brightness(0) invert(1)" : "none"
+      }} 
+    />
   );
 };
 
