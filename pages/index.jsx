@@ -184,7 +184,7 @@ const Logo = ({ size = "md", dark = false }) => {
   const h = heights[size];
   return (
     <div className="flex items-center" style={{ height: h }}>
-      <img src="/logo_doc_in.png" alt="DOC In" style={{ height: h, width: "auto", filter: dark ? "brightness(0) invert(1)" : "none" }} />
+     <img src="/logo_doc_in.png" alt="DOC In" style={{ height: h * 1.5, width: "auto", maxHeight: 54, filter: dark ? "brightness(0) invert(1)" : "none" }} />
     </div>
   );
 };
